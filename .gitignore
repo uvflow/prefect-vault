@@ -139,3 +139,4 @@ dmypy.json
 
 # Jupyter notebook
 *.ipynb
+.pdm-python

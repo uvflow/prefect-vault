@@ -1,0 +1,42 @@
+[project]
+name = "prefect-vault"
+version = "0.1.5"
+description = "Prefect-Vault"
+authors = [
+    {name = "pbchekin", email = "unknown@mail.web"},
+    {name = "teocns", email = "teocns@gmail.com"},
+]
+dependencies = [
+    "prefect",
+    "hvac",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[project.optional-dependencies]
+dev = [
+    "setuptools",
+    "pytest",
+    "black",
+    "flake8",
+    "mypy",
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "isort",
+    "pre-commit",
+    "pytest-asyncio",
+    "mock; python_version < \"3.8\"",
+    "mkdocs-gen-files",
+    "interrogate",
+    "coverage",
+]
+
+[tool.pdm]
+distribution = false
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
